@@ -1,0 +1,51 @@
+// use the asset and use css clip-path
+// get the entire image size/ total amount for grass and trees
+// n squared: shift the x 4 times, shift the y 4 times
+// use javascript to assign the class
+
+@use "variables" as var;
+
+*,
+*::before,
+*::after {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.opening-section {
+  background-color: var.$sky-blue;
+  width: 100vw;
+  height: 100vh;
+}
+
+.home-page {
+  background-color: var.$med-pink;
+  width: 100vw;
+  height: 100vh;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: var.$section-size;
+  border: 2px solid red;
+  .name {
+    font-size: var.$title-size;
+  }
+  .subtitle {
+    font-size: var.$body-size;
+  }
+}
+
+.art-section {
+  height: 100% - var.$section-size;
+  border: 2px solid orange;
+}
+
+.spritesheet{
+    aspect-ratio: 2/1;
+    height:1000px;
+}

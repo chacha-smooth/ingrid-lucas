@@ -1,0 +1,47 @@
+*,
+*::before,
+*::after {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.opening-section {
+  background-color: #d4e0ee;
+  width: 100vw;
+  height: 100vh;
+}
+
+.home-page {
+  background-color: #ffa7a6;
+  width: 100vw;
+  height: 100vh;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70%;
+  border: 2px solid red;
+}
+.title .name {
+  font-size: 100px;
+}
+.title .subtitle {
+  font-size: 50px;
+}
+
+.art-section {
+  height: 30%;
+  border: 2px solid orange;
+}
+
+.spritesheet {
+  aspect-ratio: 2/1;
+  height: 1000px;
+}
+
+/*# sourceMappingURL=index.css.map */
