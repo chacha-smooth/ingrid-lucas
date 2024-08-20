@@ -45,9 +45,8 @@ img {
 }
 
 .home-page {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 .home-page > * {
   width: 300px;
@@ -58,18 +57,14 @@ img {
 .home-page .profile-pic {
   background-color: black;
 }
-
-.about-me, .projects, .blog {
+.home-page .about-me,
+.home-page .projects,
+.home-page .blog {
   background-color: #f25477;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 50px;
-  position: absolute;
-  width: 300px;
-  border-radius: 50%;
-  aspect-ratio: 1/1;
-  border: green 2px solid;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -45,47 +45,33 @@
   border: 2px solid orange;
 }
 
+img {
+  width: 300px;
+  image-rendering: pixelated;
+}
 
+.home-page {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 
-img{
+ 
+  & > * {
     width: 300px;
-    image-rendering: pixelated;
-}
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    border: green 2px solid;
+  }
+  .profile-pic {
+    background-color: black;
+  }
 
-.home-page{
-    display:flex;
-    align-items: center;
+  .about-me,
+  .projects,
+  .blog {
+    background-color: var.$dark-pink;
+    display: flex;
     justify-content: center;
-    
-    & > *{
-   
-        width:300px;
-        border-radius: 50%;
-        aspect-ratio: 1/1;
-        border:green 2px solid;
-        
-        
-    }
-    .profile-pic{
-        background-color: black;  
-        
-
-    }
-
+    align-items: center;
+    font-size: var.$body-size;
+  }
 }
-
-    .about-me, .projects, .blog{
-       
-        background-color: var.$dark-pink;
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        font-size: var.$body-size;
-    
-        position:absolute;
-      
-        width:300px;
-        border-radius: 50%;
-        aspect-ratio: 1/1;
-        border:green 2px solid;
-    }
